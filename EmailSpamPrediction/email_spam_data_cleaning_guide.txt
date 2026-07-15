@@ -1,0 +1,16 @@
+Email Spam Detection Dataset - Data Cleaning Guide
+
+1. Load the dataset using pandas.
+2. Check shape, info(), and describe().
+3. Identify missing values using isnull().sum().
+4. Replace blank Sender_Email values with NaN and handle them.
+5. Remove duplicate rows (if any).
+6. Check data types and convert if required.
+7. Detect invalid values:
+   - Email_Length missing
+   - Num_Special_Chars = -1
+   - Num_Links = 99 (treat as outlier/example anomaly)
+8. Handle missing values (drop or impute).
+9. Detect outliers using boxplots or IQR.
+10. Verify class distribution using value_counts().
+11. Save the cleaned dataset.
