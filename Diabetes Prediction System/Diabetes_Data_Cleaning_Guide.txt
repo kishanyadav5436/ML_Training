@@ -1,0 +1,19 @@
+Diabetes Prediction Dataset - Data Cleaning Guide
+
+1. Load the dataset.
+2. Check shape, info(), and describe().
+3. Identify missing values (BMI, Glucose).
+4. Handle missing values (mean/median or suitable imputation).
+5. Detect invalid categories (e.g., Gender='Unknown') and correct/remove.
+6. Detect unrealistic values (e.g., Blood_Pressure=999) and treat as outliers or invalid values.
+7. Check duplicate records.
+8. Encode categorical columns:
+   - Gender
+   - Smoking_Status
+   - Physical_Activity
+   - Family_History
+   - Diabetes (target)
+9. Split Features (X) and Target (y).
+10. Train-test split.
+11. Train DecisionTreeClassifier.
+12. Evaluate using Accuracy, Precision, Recall, F1-score and Confusion Matrix.
